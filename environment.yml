@@ -1,0 +1,6 @@
+name: open_weather
+dependencies:
+  - python=3.11
+  - pandas
+  - requests
+  - jupyter
