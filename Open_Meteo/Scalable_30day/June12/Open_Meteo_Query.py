@@ -28,7 +28,7 @@ except Exception as e:
 # === CREATE OUTPUT FILE IF NOT EXISTS ===
 if not os.path.exists(output_file):
     pd.DataFrame(
-        columns=["taxa_name", "latitude", "longitude", "year", "date", "precip_mm"]
+        columns=["taxa_name","desired_end_date" , "latitude", "longitude", "year", "date", "precip_mm"]
     ).to_csv(output_file, index=False)
     logging.info(f"Created new output file: {output_file}")
 
